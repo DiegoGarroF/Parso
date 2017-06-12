@@ -1,0 +1,31 @@
+<%= form_for :administration, :url => { :action => :show } do |f| %>
+<div class="form-group row">
+	<div class="col-md-3"></div>
+	<div class="col-md-6">
+		<h3 for="correo" style="text-align: center;" >Digite su Api Key</h3>
+		<div class="input-group">
+				<span class="input-group-addon"><i class="glyphicon glyphicon-wrench"></i></span>
+				<input id="ApiKey" type="text" class="form-control" name="ApiKey" placeholder="Key">
+		</div>
+		<br>	
+	</div>
+	<div class="col-md-3"> </div>
+</div>
+
+<div class="form-group row">
+	<div class="col-md-3"></div>
+	<div class="col-md-6">
+		<h3 for="correo" style="text-align: center;" >Cadena de Palabras</h3>
+		<div class="input-group">
+				<span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+				<input id="ApiKey" type="text" class="form-control" name="palabras" placeholder="Digite las palabras separadas por una ,">
+		</div>
+		<br>
+		<%= f.submit "Verificar", class:"btn btn-info" %>
+		<br>	
+	</div>
+	<div class="col-md-3"> </div>
+</div>
+<% end %> 
+
+ 
